@@ -25,6 +25,8 @@
 		325EDE7715DEDF5C006F1515 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 325EDE5015DEDF5B006F1515 /* CoreData.framework */; };
 		325EDE7F15DEDF5C006F1515 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 325EDE7D15DEDF5C006F1515 /* InfoPlist.strings */; };
 		325EDE8215DEDF5C006F1515 /* LoopTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 325EDE8115DEDF5C006F1515 /* LoopTests.m */; };
+		325EDE8F15DEE0E0006F1515 /* MathSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 325EDE8E15DEE0E0006F1515 /* MathSpec.m */; };
+		325EDE9115DEE16B006F1515 /* libKiwi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 325EDE9015DEE16B006F1515 /* libKiwi.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +64,8 @@
 		325EDE7E15DEDF5C006F1515 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		325EDE8015DEDF5C006F1515 /* LoopTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoopTests.h; sourceTree = "<group>"; };
 		325EDE8115DEDF5C006F1515 /* LoopTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoopTests.m; sourceTree = "<group>"; };
+		325EDE8E15DEE0E0006F1515 /* MathSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MathSpec.m; sourceTree = "<group>"; };
+		325EDE9015DEE16B006F1515 /* libKiwi.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libKiwi.a; path = "Frameworks/Kiwi/build/Release-iphoneos/libKiwi.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				325EDE9115DEE16B006F1515 /* libKiwi.a in Frameworks */,
 				325EDE7415DEDF5C006F1515 /* SenTestingKit.framework in Frameworks */,
 				325EDE7515DEDF5C006F1515 /* UIKit.framework in Frameworks */,
 				325EDE7615DEDF5C006F1515 /* Foundation.framework in Frameworks */,
@@ -112,6 +117,7 @@
 		325EDE4915DEDF5B006F1515 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				325EDE9015DEE16B006F1515 /* libKiwi.a */,
 				325EDE4A15DEDF5B006F1515 /* UIKit.framework */,
 				325EDE4C15DEDF5B006F1515 /* Foundation.framework */,
 				325EDE4E15DEDF5B006F1515 /* CoreGraphics.framework */,
@@ -155,6 +161,7 @@
 				325EDE8015DEDF5C006F1515 /* LoopTests.h */,
 				325EDE8115DEDF5C006F1515 /* LoopTests.m */,
 				325EDE7B15DEDF5C006F1515 /* Supporting Files */,
+				325EDE8E15DEE0E0006F1515 /* MathSpec.m */,
 			);
 			path = LoopTests;
 			sourceTree = "<group>";
@@ -289,6 +296,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				325EDE8215DEDF5C006F1515 /* LoopTests.m in Sources */,
+				325EDE8F15DEE0E0006F1515 /* MathSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,8 +428,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Loop/Loop-Prefix.pch";
 				INFOPLIST_FILE = "LoopTests/LoopTests-Info.plist";
+				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
+				USER_HEADER_SEARCH_PATHS = "$(SOURCE_ROOT)/Frameworks/Kiwi/Kiwi";
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
@@ -437,8 +447,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Loop/Loop-Prefix.pch";
 				INFOPLIST_FILE = "LoopTests/LoopTests-Info.plist";
+				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
+				USER_HEADER_SEARCH_PATHS = "$(SOURCE_ROOT)/Frameworks/Kiwi/Kiwi";
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
@@ -462,6 +474,7 @@
 				325EDE8715DEDF5C006F1515 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		325EDE8815DEDF5C006F1515 /* Build configuration list for PBXNativeTarget "LoopTests" */ = {
 			isa = XCConfigurationList;
@@ -470,6 +483,7 @@
 				325EDE8A15DEDF5C006F1515 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

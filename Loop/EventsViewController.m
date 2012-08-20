@@ -6,15 +6,15 @@
 //  Copyright (c) 2012 Zamboni Dev. All rights reserved.
 //
 
-#import "MasterViewController.h"
+#import "EventsViewController.h"
 
 #import "DetailViewController.h"
 
-@interface MasterViewController ()
+@interface EventsViewController ()
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath;
 @end
 
-@implementation MasterViewController
+@implementation EventsViewController
 
 - (void)awakeFromNib
 {

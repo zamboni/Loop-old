@@ -17,7 +17,7 @@
 		325EDE6015DEDF5C006F1515 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 325EDE5E15DEDF5C006F1515 /* MainStoryboard_iPhone.storyboard */; };
 		325EDE6315DEDF5C006F1515 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 325EDE6115DEDF5C006F1515 /* MainStoryboard_iPad.storyboard */; };
 		325EDE6615DEDF5C006F1515 /* Loop.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 325EDE6415DEDF5C006F1515 /* Loop.xcdatamodeld */; };
-		325EDE6915DEDF5C006F1515 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 325EDE6815DEDF5C006F1515 /* MasterViewController.m */; };
+		325EDE6915DEDF5C006F1515 /* EventsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 325EDE6815DEDF5C006F1515 /* EventsViewController.m */; };
 		325EDE6C15DEDF5C006F1515 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 325EDE6B15DEDF5C006F1515 /* DetailViewController.m */; };
 		325EDE7415DEDF5C006F1515 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 325EDE7315DEDF5C006F1515 /* SenTestingKit.framework */; };
 		325EDE7515DEDF5C006F1515 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 325EDE4A15DEDF5B006F1515 /* UIKit.framework */; };
@@ -27,6 +27,10 @@
 		325EDE8215DEDF5C006F1515 /* LoopTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 325EDE8115DEDF5C006F1515 /* LoopTests.m */; };
 		325EDE8F15DEE0E0006F1515 /* MathSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 325EDE8E15DEE0E0006F1515 /* MathSpec.m */; };
 		325EDE9115DEE16B006F1515 /* libKiwi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 325EDE9015DEE16B006F1515 /* libKiwi.a */; };
+		325EDE9E15DEE574006F1515 /* AccountSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 325EDE9D15DEE574006F1515 /* AccountSpec.m */; };
+		325EDEAC15DEF8A7006F1515 /* Provider.m in Sources */ = {isa = PBXBuildFile; fileRef = 325EDEAB15DEF8A7006F1515 /* Provider.m */; };
+		325EDEAF15DEFFC5006F1515 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 325EDEAE15DEFFC5006F1515 /* LoginViewController.m */; };
+		325EDEC415E0A2B0006F1515 /* SMWebRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 325EDEC315E0A2B0006F1515 /* SMWebRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,8 +58,8 @@
 		325EDE5F15DEDF5C006F1515 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		325EDE6215DEDF5C006F1515 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		325EDE6515DEDF5C006F1515 /* Loop.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Loop.xcdatamodel; sourceTree = "<group>"; };
-		325EDE6715DEDF5C006F1515 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
-		325EDE6815DEDF5C006F1515 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		325EDE6715DEDF5C006F1515 /* EventsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EventsViewController.h; sourceTree = "<group>"; };
+		325EDE6815DEDF5C006F1515 /* EventsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EventsViewController.m; sourceTree = "<group>"; };
 		325EDE6A15DEDF5C006F1515 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		325EDE6B15DEDF5C006F1515 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		325EDE7215DEDF5C006F1515 /* LoopTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoopTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,6 +70,14 @@
 		325EDE8115DEDF5C006F1515 /* LoopTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoopTests.m; sourceTree = "<group>"; };
 		325EDE8E15DEE0E0006F1515 /* MathSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MathSpec.m; sourceTree = "<group>"; };
 		325EDE9015DEE16B006F1515 /* libKiwi.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libKiwi.a; path = "Frameworks/Kiwi/build/Release-iphoneos/libKiwi.a"; sourceTree = "<group>"; };
+		325EDE9D15DEE574006F1515 /* AccountSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountSpec.m; sourceTree = "<group>"; };
+		325EDEA615DEECA3006F1515 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		325EDEAA15DEF8A7006F1515 /* Provider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Provider.h; sourceTree = "<group>"; };
+		325EDEAB15DEF8A7006F1515 /* Provider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Provider.m; sourceTree = "<group>"; };
+		325EDEAD15DEFFC5006F1515 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		325EDEAE15DEFFC5006F1515 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		325EDEC215E0A2B0006F1515 /* SMWebRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMWebRequest.h; sourceTree = "<group>"; };
+		325EDEC315E0A2B0006F1515 /* SMWebRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMWebRequest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +129,8 @@
 		325EDE4915DEDF5B006F1515 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				325EDEC215E0A2B0006F1515 /* SMWebRequest.h */,
+				325EDEC315E0A2B0006F1515 /* SMWebRequest.m */,
 				325EDE9015DEE16B006F1515 /* libKiwi.a */,
 				325EDE4A15DEDF5B006F1515 /* UIKit.framework */,
 				325EDE4C15DEDF5B006F1515 /* Foundation.framework */,
@@ -130,16 +144,14 @@
 		325EDE5215DEDF5B006F1515 /* Loop */ = {
 			isa = PBXGroup;
 			children = (
+				325EDEB215DEFFF5006F1515 /* Controller */,
+				325EDEB115DEFFF0006F1515 /* View */,
+				325EDEB015DEFFE8006F1515 /* Model */,
 				325EDE5B15DEDF5B006F1515 /* AppDelegate.h */,
 				325EDE5C15DEDF5B006F1515 /* AppDelegate.m */,
-				325EDE5E15DEDF5C006F1515 /* MainStoryboard_iPhone.storyboard */,
-				325EDE6115DEDF5C006F1515 /* MainStoryboard_iPad.storyboard */,
-				325EDE6715DEDF5C006F1515 /* MasterViewController.h */,
-				325EDE6815DEDF5C006F1515 /* MasterViewController.m */,
-				325EDE6A15DEDF5C006F1515 /* DetailViewController.h */,
-				325EDE6B15DEDF5C006F1515 /* DetailViewController.m */,
 				325EDE6415DEDF5C006F1515 /* Loop.xcdatamodeld */,
 				325EDE5315DEDF5B006F1515 /* Supporting Files */,
+				325EDEA615DEECA3006F1515 /* Constants.h */,
 			);
 			path = Loop;
 			sourceTree = "<group>";
@@ -162,6 +174,7 @@
 				325EDE8115DEDF5C006F1515 /* LoopTests.m */,
 				325EDE7B15DEDF5C006F1515 /* Supporting Files */,
 				325EDE8E15DEE0E0006F1515 /* MathSpec.m */,
+				325EDE9D15DEE574006F1515 /* AccountSpec.m */,
 			);
 			path = LoopTests;
 			sourceTree = "<group>";
@@ -173,6 +186,45 @@
 				325EDE7D15DEDF5C006F1515 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		325EDEB015DEFFE8006F1515 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				325EDEAA15DEF8A7006F1515 /* Provider.h */,
+				325EDEAB15DEF8A7006F1515 /* Provider.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		325EDEB115DEFFF0006F1515 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				325EDEB315DF0023006F1515 /* IPad */,
+				325EDE5E15DEDF5C006F1515 /* MainStoryboard_iPhone.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		325EDEB215DEFFF5006F1515 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				325EDE6715DEDF5C006F1515 /* EventsViewController.h */,
+				325EDE6815DEDF5C006F1515 /* EventsViewController.m */,
+				325EDE6A15DEDF5C006F1515 /* DetailViewController.h */,
+				325EDE6B15DEDF5C006F1515 /* DetailViewController.m */,
+				325EDEAD15DEFFC5006F1515 /* LoginViewController.h */,
+				325EDEAE15DEFFC5006F1515 /* LoginViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		325EDEB315DF0023006F1515 /* IPad */ = {
+			isa = PBXGroup;
+			children = (
+				325EDE6115DEDF5C006F1515 /* MainStoryboard_iPad.storyboard */,
+			);
+			name = IPad;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,8 +338,11 @@
 				325EDE5915DEDF5B006F1515 /* main.m in Sources */,
 				325EDE5D15DEDF5B006F1515 /* AppDelegate.m in Sources */,
 				325EDE6615DEDF5C006F1515 /* Loop.xcdatamodeld in Sources */,
-				325EDE6915DEDF5C006F1515 /* MasterViewController.m in Sources */,
+				325EDE6915DEDF5C006F1515 /* EventsViewController.m in Sources */,
 				325EDE6C15DEDF5C006F1515 /* DetailViewController.m in Sources */,
+				325EDEAC15DEF8A7006F1515 /* Provider.m in Sources */,
+				325EDEAF15DEFFC5006F1515 /* LoginViewController.m in Sources */,
+				325EDEC415E0A2B0006F1515 /* SMWebRequest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +352,7 @@
 			files = (
 				325EDE8215DEDF5C006F1515 /* LoopTests.m in Sources */,
 				325EDE8F15DEE0E0006F1515 /* MathSpec.m in Sources */,
+				325EDE9E15DEE574006F1515 /* AccountSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

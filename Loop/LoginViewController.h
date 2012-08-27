@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ServerDelegate.h"
+#import "Server.h"
 
-@interface LoginViewController : UIViewController <NSFetchedResultsControllerDelegate>
+@interface LoginViewController : UIViewController <NSFetchedResultsControllerDelegate, ServerDelegate>
 
 @property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
 @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;

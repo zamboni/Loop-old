@@ -1,21 +1,18 @@
 //
-//  LoginViewController.m
+//  CreateUserViewController.m
 //  Loop
 //
-//  Created by Fletcher Fowler on 8/17/12.
+//  Created by Fletcher Fowler on 8/20/12.
 //  Copyright (c) 2012 Zamboni Dev. All rights reserved.
 //
 
-#import "LoginViewController.h"
-#import "SMWebRequest.h"
-#import "Server.h"
-#import "AppDelegate.h"
+#import "CreateUserViewController.h"
 
-@interface LoginViewController ()
+@interface CreateUserViewController ()
 
 @end
 
-@implementation LoginViewController
+@implementation CreateUserViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -38,18 +35,14 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)login
+- (IBAction)sendRegistration
 {
-    NSString *email     = self.emailField.text;
-    NSString *password  = self.passwordField.text;
-
+    NSString *email                 = self.emailField.text;
+    NSString *password              = self.passwordField.text;
+    NSString *password_confirmation = self.passwordConfirmationField.text;
+    
     [[Server sharedInstance] setDelegate:self];
-    [Server login:email:password];
-}
-
-- (void)didLogin:(NSString *)userId
-{
-    NSLog(@"loggedin");
+    [Server registerUser:email:password];    
 }
 
 - (void)touchesEnded: (NSSet *)touches withEvent: (UIEvent *)event {

@@ -8,6 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
+@class Server;
+
 @protocol ServerDelegate <NSObject>
+
+@optional
+
+- (void)didLogin:(NSString *)userId;
+- (void)didRegister:(NSString *)userId;
 
 @end

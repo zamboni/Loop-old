@@ -31,6 +31,8 @@
 		325EDEAC15DEF8A7006F1515 /* Provider.m in Sources */ = {isa = PBXBuildFile; fileRef = 325EDEAB15DEF8A7006F1515 /* Provider.m */; };
 		325EDEAF15DEFFC5006F1515 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 325EDEAE15DEFFC5006F1515 /* LoginViewController.m */; };
 		325EDEC415E0A2B0006F1515 /* SMWebRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 325EDEC315E0A2B0006F1515 /* SMWebRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		32FB0EDB15E1E8D100D182D7 /* Server.m in Sources */ = {isa = PBXBuildFile; fileRef = 32FB0EDA15E1E8D100D182D7 /* Server.m */; };
+		32FB0EE415E233C200D182D7 /* CreateUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32FB0EE315E233C200D182D7 /* CreateUserViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +80,11 @@
 		325EDEAE15DEFFC5006F1515 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		325EDEC215E0A2B0006F1515 /* SMWebRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMWebRequest.h; sourceTree = "<group>"; };
 		325EDEC315E0A2B0006F1515 /* SMWebRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMWebRequest.m; sourceTree = "<group>"; };
+		32FB0ED915E1E8D100D182D7 /* Server.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Server.h; sourceTree = "<group>"; };
+		32FB0EDA15E1E8D100D182D7 /* Server.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Server.m; sourceTree = "<group>"; };
+		32FB0EDD15E1E93C00D182D7 /* ServerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerDelegate.h; sourceTree = "<group>"; };
+		32FB0EE215E233C200D182D7 /* CreateUserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateUserViewController.h; sourceTree = "<group>"; };
+		32FB0EE315E233C200D182D7 /* CreateUserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateUserViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,6 +200,9 @@
 			children = (
 				325EDEAA15DEF8A7006F1515 /* Provider.h */,
 				325EDEAB15DEF8A7006F1515 /* Provider.m */,
+				32FB0ED915E1E8D100D182D7 /* Server.h */,
+				32FB0EDA15E1E8D100D182D7 /* Server.m */,
+				32FB0EDD15E1E93C00D182D7 /* ServerDelegate.h */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -215,6 +225,8 @@
 				325EDE6B15DEDF5C006F1515 /* DetailViewController.m */,
 				325EDEAD15DEFFC5006F1515 /* LoginViewController.h */,
 				325EDEAE15DEFFC5006F1515 /* LoginViewController.m */,
+				32FB0EE215E233C200D182D7 /* CreateUserViewController.h */,
+				32FB0EE315E233C200D182D7 /* CreateUserViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -343,6 +355,8 @@
 				325EDEAC15DEF8A7006F1515 /* Provider.m in Sources */,
 				325EDEAF15DEFFC5006F1515 /* LoginViewController.m in Sources */,
 				325EDEC415E0A2B0006F1515 /* SMWebRequest.m in Sources */,
+				32FB0EDB15E1E8D100D182D7 /* Server.m in Sources */,
+				32FB0EE415E233C200D182D7 /* CreateUserViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

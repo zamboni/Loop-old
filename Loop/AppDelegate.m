@@ -18,20 +18,20 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
-    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
-        UISplitViewController *splitViewController = (UISplitViewController *)self.window.rootViewController;
-        UINavigationController *navigationController = [splitViewController.viewControllers lastObject];
-        splitViewController.delegate = (id)navigationController.topViewController;
-        
-        UINavigationController *masterNavigationController = splitViewController.viewControllers[0];
-        LoginViewController *controller = (LoginViewController *)masterNavigationController.topViewController;
-        controller.managedObjectContext = self.managedObjectContext;
-    } else {
-        UITabBarController *tabBarController = (UITabBarController *)self.window.rootViewController;
-        LoginViewController *controller = (LoginViewController *)tabBarController.selectedViewController;
-        controller.managedObjectContext = self.managedObjectContext;
-    }
+    
+    [MagicalRecord setupCoreDataStackWithStoreNamed:@"Loop.xcdatamodeld"];
+//    // Override point for customization after application launch.
+//    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
+//        UISplitViewController *splitViewController = (UISplitViewController *)self.window.rootViewController;
+//        UINavigationController *navigationController = [splitViewController.viewControllers lastObject];
+//        splitViewController.delegate = (id)navigationController.topViewController;
+//        
+//        UINavigationController *masterNavigationController = splitViewController.viewControllers[0];
+//        LoginViewController *controller = (LoginViewController *)masterNavigationController.topViewController;
+//    } else {
+//        UITabBarController *tabBarController = (UITabBarController *)self.window.rootViewController;
+//        LoginViewController *controller = (LoginViewController *)tabBarController.selectedViewController;
+//    }
     return YES;
 }
 							
@@ -59,8 +59,7 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application
 {
-    // Saves changes in the application's managed object context before the application terminates.
-    [self saveContext];
+    [MagicalRecord cleanUp];
 }
 
 - (void)saveContext

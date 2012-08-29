@@ -40,7 +40,7 @@
     NSString *email                 = self.emailField.text;
     NSString *password              = self.passwordField.text;
     NSString *password_confirmation = self.passwordConfirmationField.text;
-    
+    if(password isEqualToString:<#(NSString *)#>)
     [[Server sharedInstance] setDelegate:self];
     [Server registerUser:email:password];    
 }

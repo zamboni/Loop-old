@@ -8,6 +8,7 @@
 
 #import "Server.h"
 #import "SMWebRequest.h"
+#import "User.h"
 
 @implementation Server
 
@@ -76,7 +77,6 @@ static Server *sharedObject;
         }
     };
     
-    NSLog(params.description);
     Server *server = [Server sharedInstance];
     
     NSMutableURLRequest *request = [self createRequest:@"http://localhost:3000/users.json":params];
@@ -91,9 +91,11 @@ static Server *sharedObject;
     Server *shared = [Server sharedInstance];
     
     NSError *error;
-    NSDictionary *loginResponse = [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];
-    NSLog(@"user created");
-    
+    NSDictionary *response = [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];
+    NSString *email = [[response objectForKey:@"user"] objectForKey:@"email"];
+    [User createUser:email];
+    NSArray *users = [User getUser:email];
+    NSLog(users.description);
 }
 
 + (NSMutableURLRequest *)createRequest:(NSString *)url:(NSDictionary *)params

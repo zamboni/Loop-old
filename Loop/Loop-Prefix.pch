@@ -2,6 +2,9 @@
 // Prefix header for all source files of the 'Loop' target in the 'Loop' project
 //
 
+#define MR_SHORTHAND
+#import "CoreData+MagicalRecord.h"
+
 #import <Availability.h>
 
 #ifndef __IPHONE_5_0

@@ -4,3 +4,6 @@
 [submodule "Frameworks/MagicalRecord"]
 	path = Frameworks/MagicalRecord
 	url = https://github.com/magicalpanda/MagicalRecord.git
+[submodule "Frameworks/ACSimpleKeychain"]
+	path = Frameworks/ACSimpleKeychain
+	url = https://github.com/alexchugunov/ACSimpleKeychain.git
